@@ -43,7 +43,8 @@ export class MovieComponent implements OnInit {
       });
       this._moviesServices.getSimilarMovies(id).subscribe(res => {
         console.log(res.results);
-        
+        //THIS IS DJ+4 CODE 8 AUG 2018
+
         this.similarMovies = res.results.slice(0, 12);
       });
     })
